@@ -3,12 +3,31 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>My Address Book</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="script.js"></script> -->
 </head>
 <body>
-    <h1>Address Book</h1>
+    <section class="addressContainer">
+        <form>
+            <h1>My Contacts</h1>
+            <input type="text" placeholder="Contacts Name">
+            <input type="text" placeholder="Contacts Email">
+            <input type="text" placeholder="Contacts Phone">
+            <select name="relation" id="relationDrpDwn" placeholder="relation">
+                <option value="family">Family</option>
+                <option value="friend">Friend</option>
+                <option value="co-worker">Co-worker</option>
+                <option value="acquaintance">Acquaintance</option>
+            </select>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+
+    <section class="contactsContainer">
+
+    </section>
 </body>
 </html>
