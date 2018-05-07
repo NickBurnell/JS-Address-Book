@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <!-- <script src="script.js"></script> -->
 </head>
+
 <body>
-    <section class="addressContainer">
-        <form>
-            <h1>My Contacts</h1>
+    <section id="addressContainer">
+        <form id="ContactForm">
+            <h1 id="welcomeMsg">My Contacts</h1>
             <input type="text" placeholder="Contacts Name">
             <input type="text" placeholder="Contacts Email">
             <input type="text" placeholder="Contacts Phone">
@@ -22,12 +23,14 @@
                 <option value="co-worker">Co-worker</option>
                 <option value="acquaintance">Acquaintance</option>
             </select>
-            <button type="submit">Add</button>
+            <button id="addBtn" type="submit" onclick="add(info), makeContactCard()">Add</button>
         </form>
     </section>
 
-    <section class="contactsContainer">
-
+    <section id="contactsContainer">
+        
     </section>
+    <script src="script.js"></script>
 </body>
+
 </html>

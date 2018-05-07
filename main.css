@@ -6,7 +6,7 @@ body {
     
 }
 
-.addressContainer {
+#addressContainer {
     margin: 10px 120px;
     background-color: rgba(179, 178, 176, 0.6);
     border-radius: 5px;
@@ -18,7 +18,7 @@ form {
   border-radius: 5px;
 }
 
-h1 {
+#welcomeMsg {
     color: #ffffff;
     text-align: center;
 }
@@ -33,12 +33,28 @@ input[type=text], select {
     margin: 10px;
     resize: vertical;
 }
-button {
+#addBtn {
     width: 100%;
     height: 40px;
     border-radius: 5px;
     margin: 10px;
 }
-.contactsContainer {
+#contactsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contactCards {
     background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.contactCards > ul {
+    padding: 0;
+    margin:0;
+}
+.contactCard{
+    margin:0;
+    padding:0;
 }
